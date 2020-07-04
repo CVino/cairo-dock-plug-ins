@@ -810,7 +810,7 @@ void vfs_backend_launch_uri (const gchar *cURI)
 	g_return_if_fail (cURI != NULL);
 	
 	cd_debug ("%s (%s)", __func__, cURI);
-	gchar *cCommand = g_strdup_printf ("kioclient exec \"%s\"", cURI);
+	gchar *cCommand = g_strdup_printf ("kioclient5 exec \"%s\"", cURI);
 	cairo_dock_launch_command (cCommand);
 	g_free (cCommand);
 	
